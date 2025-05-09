@@ -1,0 +1,17 @@
+[project]
+name = "MASS"
+version = "0.1.0"
+description = "A cool tool"
+authors = [{ name = "Tim Somerset", email = "ts932@cam.ac.uk" }]
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["tools"]
+
+[project.scripts]
+MASS = "tools.cli:main"
